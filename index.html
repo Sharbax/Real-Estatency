@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Agency</title>
+    <!--Main Style Sheet-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Normalize.css style sheet for rendering-->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!--Font Awesome Library--> <!--For good display of icons-->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto:ital,wght@1,100;1,300;1,700&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Start Settings Box-->
+    <div class="settings-box">
+        <div class="toggle-settings">
+            <i class="fa fa-gear"></i>
+        </div>
+        <div class="settings-container">
+            <div class="option-box">
+                <h4>Colors</h4>
+                <ul class="colors-list">
+                    <li class="active" data-color="#e9d08ca8"></li> <!--Using data color to let the user to pick a color from the list and store it in the data color to be shown-->
+                    <li data-color="#f2b83cf5"></li>
+                    <li data-color="#aee0d2"></li>
+                    <li data-color="#224e6890"></li>
+                    <li data-color="#721919ca"></li>
+                </ul>
+            </div>
+            <div class="option-box">
+                <h4>Backgrounds</h4>
+                <div class="background-box">
+                    <span class="yes active" data-background="yes">Shuffle</span>
+                    <span class="no" data-background="no">Stop</span>
+                </div>
+            </div>
+            <div class="option-box">
+                <h4>Bullets</h4>
+                <div class="bullets-option">
+                    <span class="yes active" data-display="yes">Show</span>
+                    <span class="no" data-display="no">Hide</span>
+                </div>
+            </div>
+            <button class="reset-options">Reset Settings</button>
+        </div>
+    </div>
+    <!--End Settings Box-->
+
+    <!--Start Nav Bullets-->
+    <div class="nav-bullets">
+        <div class="bullet" data-section=".about-us">
+            <div class="tooltip">About</div>
+        </div>
+        <div class="bullet" data-section=".services">
+            <div class="tooltip">Services</div>
+        </div>
+        <div class="bullet" data-section=".gallery">
+            <div class="tooltip">Gallery</div>
+        </div>
+        <div class="bullet" data-section=".timeline">
+            <div class="tooltip">Projects</div>
+        </div>
+        <div class="bullet" data-section=".features">
+            <div class="tooltip">Features</div>
+        </div>
+        <div class="bullet" data-section=".testimonials">
+            <div class="tooltip">Testimonials</div>
+        </div>
+        <div class="bullet" data-section=".contact">
+            <div class="tooltip">Contact</div>
+        </div>
+    </div>
+    <!--End Nav Bullets-->
+
+    <!--Start Landing Page-->
+    <div class="landing-page">
+        <div class="overlay"></div>     
+        <div class="container">
+            <div class="header-area">
+                <div class="logo"> <span>Real</span>Estatency 
+                    <i class="fa-sharp fa-solid fa-house"></i>
+                </div>
+                <div class="links-container">
+                    <ul class="links">
+                        <li><a href="#about-us">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                    <button class="toggle-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="introduction-text">
+            <h1>Own <span>Your </span> World</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus animi vitae deserunt doloremque! Placeat magni laboriosam</p>
+        </div>
+    </div>
+    <!--End Landing Page-->
+
+    <!--Start About Us-->
+    <div class="container">
+        <div class="about-us" id="about-us">
+            <div class="info-box">
+                <h2>About Us</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore magni, eveniet minima modi aperiam, facilis eius quas tempora eum reiciendis velit esse necessitatibus exercitationem, praesentium alias eaque dolorem? Distinctio, explicabo!</p>
+            </div>
+            <div class="image-box">
+                <i class="fa-regular fa-house-user"></i>
+            </div>
+        </div>
+    </div>
+    <!--End About US-->
+
+    <!--Start Services-->
+    <div class="services" id="services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="service-box">
+                <div class="service-name">Property Management</div>
+                <div class="service-progress">
+                    <span data-progress="100%"></span>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-name">Investment Advice</div>
+                <div class="service-progress">
+                    <span data-progress="100%"></span>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-name">Consulting Services</div>
+                <div class="service-progress">
+                    <span data-progress="100%"></span>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-name">Financial Advice</div>
+                <div class="service-progress">
+                    <span data-progress="100%"></span>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-name">Market Analysis</div>
+                <div class="service-progress">
+                    <span data-progress="100%"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Services-->
+
+    <!--Start Gallery-->
+    <div class="gallery" id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="image-box">
+                <img src="./Imgs/gallery1.png" alt="Image One">
+                <img src="./Imgs/gallery2.png" alt="Image Two">
+                <img src="./Imgs/gallery3.png" alt="Image Three">
+                <img src="./Imgs/gallery4.png" alt="Image Four">
+                <img src="./Imgs/gallery5.png" alt="Image Five">
+                <img src="./Imgs/gallery6.png" alt="Image Six">
+                <img src="./Imgs/gallery7.png" alt="Image Seven">
+                <img src="./Imgs/gallery8.png" alt="Image Eight">
+                <img src="./Imgs/gallery9.png" alt="Image Nine">
+                <img src="./Imgs/gallery10.png" alt="Image Ten">
+            </div>
+        </div>
+    </div>
+
+    <!--End Gallery-->
+
+    <!--Start Timeline-->
+    <div class="timeline">
+        <div class="container" id="projects">
+            <div class="timeline-content" >
+                <div class="year">2023</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Project Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quibusdam quisquam consequuntur autem aliquam at voluptatum incidunt velit vero? Dignissimos ut adipisci maiores atque distinctio vero enim fugiat provident cupiditate?</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Project Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quibusdam quisquam consequuntur autem aliquam at voluptatum incidunt velit vero? Dignissimos ut adipisci maiores atque distinctio vero enim fugiat provident cupiditate?</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="year">2021</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Project Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quibusdam quisquam consequuntur autem aliquam at voluptatum incidunt velit vero? Dignissimos ut adipisci maiores atque distinctio vero enim fugiat provident cupiditate?</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Project Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quibusdam quisquam consequuntur autem aliquam at voluptatum incidunt velit vero? Dignissimos ut adipisci maiores atque distinctio vero enim fugiat provident cupiditate?</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Project Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quibusdam quisquam consequuntur autem aliquam at voluptatum incidunt velit vero? Dignissimos ut adipisci maiores atque distinctio vero enim fugiat provident cupiditate?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Timeline-->
+
+    <!--Start Features-->
+    <div class="features" id="features">
+        <h2>Features</h2>
+        <div class="container">
+            <div class="feat-box">
+                <img src="./Imgs/feature1.png" alt="">
+                <h4>Improvements</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quos sed</p>
+            </div>
+            <div class="feat-box">
+                <img src="./Imgs/feature2.png" alt="">
+                <h4>Immobility</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quos sed</p>
+            </div>
+            <div class="feat-box">
+                <img src="./Imgs/feature3.png.webp" alt="">
+                <h4>Indestructibility</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quos sed</p>
+            </div>
+            <div class="feat-box">
+                <img src="./Imgs/feature4.png" alt="">
+                <h4>Investment</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quos sed</p>
+            </div>
+            <div class="feat-box">
+                <img src="./Imgs/feaature5.webp" alt="">
+                <h4>Location</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quos sed</p>
+            </div>
+            <div class="feat-box">
+                <img src="./Imgs/feature6.png" alt="">
+                <h4>Uniqueness</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quos sed</p>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+    <!--End Features-->
+
+    <!--Start Testimonials-->
+    <div class="testimonials">
+        <div class="container">
+            <h2 id="testimonials">Testimonials</h2>
+            <div class="testimonials-content">
+                <div class="ts-box">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo dignissimos earum illo. Modi perspiciatis, possimus eos illo!</p>
+                    <div class="person-info">
+                        <img src="./Imgs/testimonials3.png" alt="">
+                        <div class="person-pos">
+                            <h4>Paul Marg</h4>
+                            <p>CEO, REA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ts-box">
+                    <p>Lorem ipsum do, et conseetur adipisicing adf fadgb elit. Nemo dignissimos earum. Modi perspiciatis, possimus eos illo!</p>
+                    <div class="person-info">
+                        <img src="./Imgs/testimonials4.png" alt="">
+                        <div class="person-pos">
+                            <h4>Raul Many</h4>
+                            <p>COO, REA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ts-box">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo dignissimos earum illo. Modi perspiciatis, possimus eos illo!</p>
+                    <div class="person-info">
+                        <img src="./Imgs/testimonials5.png" alt="">
+                        <div class="person-pos">
+                            <h4>Marc Zed</h4>
+                            <p>HR, REA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Testimonials-->
+
+    <!--Start Contact Us-->
+    <div class="contact" id="contact">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="">
+                <div class="left">
+                    <input type="text" placeholder="Name" name="username">
+                    <input type="text" placeholder="Phone Number" name="Phone">
+                    <input type="text" placeholder="Email" name="email">
+                    <input type="text" placeholder="Subject" name="subject">
+                </div>
+                <div class="right">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--End Contact Us-->
+
+    <!--Start Footer-->
+    <div class="footer">
+        Real Estatency
+        <p>REA</p>
+    </div>
+    <!--End Footer-->
+    <!--Main JavaScript Sheet-->
+    <script src="./JS/script.js"></script>
+</body>
+</html>
